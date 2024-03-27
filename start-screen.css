@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./stars.gif");
+    background-size: cover;
+    color: #ffffffff;
+    text-align: center;
+    margin: 0;
+    font-size: calc(3vw + 5px);
+    font-family: 'Starjedi', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; 
+  
+}
+
+@font-face {
+    font-family: 'Starjedi';
+    src: 
+    url('Starjedi.woff2') format('woff2'), 
+    url('Starjedi.woff') format('woff'),
+    url('Starjedi.ttf') format('truetype');
+  }
+
+.start-screen {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+    letter-spacing: 5px;
+    color: black;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #004AAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2072dd;
+}
+
+.game-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (min-width: 568px) {
+    h1 {
+      font-size: 50px;
+      width: 600px;
+    }
+  }
+  
+@media screen and (min-width: 800px) {
+    h1 {
+      font-size: 64px;
+      width: 700px;
+    }
+}
+  
+@media screen and (min-width:900px){
+    h1 {
+      font-size: 50px;
+      width: 1000px;
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    h1 {
+      font-size: 50px;
+      width: 1000px;
+    }
+}
